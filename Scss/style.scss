@@ -1,75 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
-
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: poppins, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-:root{
-    --primary-color01: #F0C53E;
-    --secondary-color:#E5E5E5;
-    --primary-color02:#A7283E;
-    --text-color-dark:#2C2D32;
-    --text-color-light:#fff;
+:root {
+  --primary-color01: #f0c53e;
+  --secondary-color: #e5e5e5;
+  --primary-color02: #a7283e;
+  --text-color-dark: #2c2d32;
+  --text-color-light: #fff;
+  --background-color: rgba(255, 255, 255, 0.9);
 }
 
-.btn{
-    padding: .8rem 2rem;
-    background-color: var(--primary-color02);
-    color: var(--text-color-light);
-    border-radius: 2rem;
-    font-size: 20px;
-    cursor: pointer;
+.btn {
+  padding: 0.8rem 2rem;
+  background-color: var(--primary-color02);
+  color: var(--text-color-light);
+  border-radius: 2rem;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
-.header{
-    background: url(../Assets/images/Rectangle4.png);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+//      Header Start
 
-    
-    .navbar{
-        padding: 2rem 5vw;
+.header {
+  background: url(../Assets/images/Rectangle4.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  //   Navbar Start
+
+  .navbar {
+    padding: 2rem 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .nav-link {
+        color: var(--text-color);
+        margin: 0 2rem;
+        cursor: pointer;
+      }
+    }
+
+    .nav-btn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .phone-icon {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  //  Navbar End
+
+  //  Hero Start
+
+  .hero {
+    padding: 2rem 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      color: var(--text-color-dark);
+      width: 70%;
+
+      .hero-header {
+        font-weight: 800;
+        font-size: 44px;
+        color: var(--text-color-dark);
+      }
+
+      .hero-title {
+        font-size: 20px;
+        font-weight: 400px;
+        width: 75%;
+      }
+
+      .span {
+        color: var(--primary-color02);
+      }
+
+      .hero-cta {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        .hero-btn {
+          font-size: 20px;
+          margin-right: 1rem;
+        }
+
+        .anchor {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          text-decoration: none;
+          color: var(--text-color-dark);
+          gap: 0.5rem;
+          font-size: 18px;
+        }
+
+        .play {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    .hero-image {
+      position: relative;
+
+      .image {
+        width: 100%;
+      }
+
+      .hero-image-text {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-    
-    
-        .nav-links{
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-    
-    
-            .nav-link{
-                color: var(--text-color);
-                margin: 0 2rem;
-                cursor: pointer;
-            }
-        }
-    
-    
-        .nav-btn{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-    
-    
-            .phone-icon{
-                margin-right: 1rem;
-            }
-        }
+        gap: 1rem;
+        background: var(--background-color);
+        position: absolute;
+      }
+
+      .hero-image-text01 {
+        padding: 1.5rem;
+        top: 3.5rem;
+        border-radius: 1rem;
+      }
+
+      .hero-image-text02 {
+        padding: 1.5rem;
+        bottom: 0.5rem;
+        border-radius: 1rem;
+      }
     }
+  }
+
+  // Hero End
 }
 
+//   Header End
