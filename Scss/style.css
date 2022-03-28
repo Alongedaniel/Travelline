@@ -71,25 +71,60 @@ html {
 
 .header .navbar .nav-links .nav-link {
   color: var(--text-color);
-  margin: 0 2rem;
+  margin-left: 4rem;
   cursor: pointer;
 }
 
-.header .navbar .nav-btn {
+.header .navbar .theme {
+  width: 55px;
+  background-color: var(--text-color-dark);
+  border-radius: 2.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
 }
 
-.header .navbar .nav-btn .phone-icon {
-  margin-right: 1rem;
+.header .navbar .theme .circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  margin: 0.2rem;
+  z-index: 2;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.header .navbar .theme .toggler {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.header .navbar .theme .theme-icons {
+  color: var(--text-color-light);
+  position: absolute;
+}
+
+.header .navbar .theme .left {
+  left: 0.4rem;
+}
+
+.header .navbar .theme .right {
+  right: 0.4rem;
 }
 
 .header .hero {
@@ -101,9 +136,12 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .hero .hero-text {

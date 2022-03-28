@@ -56,18 +56,56 @@ html {
 
       .nav-link {
         color: var(--text-color);
-        margin: 0 2rem;
+        margin-left: 4rem;
         cursor: pointer;
       }
     }
 
-    .nav-btn {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+    // .nav-btn {
+    //   display: flex;
+    //   flex-direction: row;
+    //   align-items: center;
 
-      .phone-icon {
-        margin-right: 1rem;
+    //   .phone-icon {
+    //     margin-right: 1rem;
+    //   }
+    // }
+    .theme {
+      width: 55px;
+      background-color: var(--text-color-dark);
+      border-radius: 2.4rem;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      position: relative;
+
+      .circle {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: var(--secondary-color);
+        margin: 0.2rem;
+        z-index: 2;
+        transform: translateX(-50%);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .toggler {
+        transform: translateX(50%);
+      }
+
+      .theme-icons {
+        color: var(--text-color-light);
+        position: absolute;
+      }
+
+      .left {
+        left: 0.4rem;
+      }
+
+      .right {
+        right: 0.4rem;
       }
     }
   }
@@ -80,7 +118,8 @@ html {
     padding: 2rem 5vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 
     .hero-text {
       display: flex;
