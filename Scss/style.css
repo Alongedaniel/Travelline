@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+:root {
+  --primary-color01: #F0C53E;
+  --secondary-color:#E5E5E5;
+  --primary-color02:#A7283E;
+  --text-color-dark:#2C2D32;
+  --text-color-light:#fff;
+}
+
+.btn {
+  padding: .8rem 2rem;
+  background-color: var(--primary-color02);
+  color: var(--text-color-light);
+  border-radius: 2rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header {
+  background: url(../Assets/images/Rectangle4.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header .navbar {
+  padding: 2rem 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .navbar .nav-links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .nav-links .nav-link {
+  color: var(--text-color);
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+.header .navbar .nav-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .nav-btn .phone-icon {
+  margin-right: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
