@@ -31,6 +31,113 @@ html {
   outline: none;
 }
 
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--text-color-dark);
+  opacity: 0.7;
+  position: fixed;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.mobile-nav {
+  width: 100vw;
+  height: 45vh;
+  position: fixed;
+  background-color: var(--primary-color02);
+  z-index: 1;
+  padding: 1rem 1.5rem;
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.mobile-nav .mobile-nav-links {
+  list-style: none;
+}
+
+.mobile-nav .mobile-nav-links .mobile-nav-link {
+  padding: 0.5rem;
+  color: var(--text-color-light);
+  border-bottom: 1px dashed var(--primary-color01);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.mobile-nav .mobile-nav-links .mobile-nav-link:hover {
+  background-color: var(--primary-color01);
+  opacity: 0.9;
+}
+
+.mobile-nav .mobile-nav-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.theme {
+  width: 55px;
+  background-color: var(--text-color-dark);
+  border-radius: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+.theme .circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  margin: 0.2rem;
+  z-index: 2;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.theme .toggler {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.theme .theme-icons {
+  color: var(--text-color-light);
+  position: absolute;
+}
+
+.theme .left {
+  left: 0.4rem;
+}
+
+.theme .right {
+  right: 0.4rem;
+}
+
 .header {
   background: url(../Assets/images/Rectangle4.png);
   background-position: center;
@@ -125,6 +232,84 @@ html {
 
 .header .navbar .theme .right {
   right: 0.4rem;
+}
+
+.header .navbar .menu-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.header .navbar .menu-icon .bar {
+  width: 32px;
+  height: 0.5vh;
+  margin-bottom: 0.3rem;
+  border-radius: 0.2rem;
+  background-color: var(--text-color-dark);
+}
+
+.header .navbar .bar:hover {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.header .navbar .bar1 {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.header .navbar .bar2 {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.header .navbar .bar3 {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .header .hero {
@@ -246,5 +431,68 @@ html {
   padding: 1.5rem;
   bottom: 0.5rem;
   border-radius: 1rem;
+}
+
+@media (max-width: 1300px) {
+  .header {
+    height: 150vh;
+  }
+  .header .hero {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .header .hero .hero-text {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .header .hero .hero-text .hero-title {
+    width: 100%;
+  }
+  .header .hero .hero-cta {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 877px) {
+  .hero-cta {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    gap: 1.5rem;
+  }
+  .hero-cta .hero-btn {
+    margin-right: 0 !important;
+  }
+  .hero-image-text02 {
+    display: none !important;
+  }
+  .nav-links,
+  .navbar .theme {
+    display: none !important;
+  }
+}
+
+@media (min-width: 887px) {
+  .menu-icon {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-link:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .btn {
+    font-size: 18px !important;
+    padding: 0.8rem 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
