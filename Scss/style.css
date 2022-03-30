@@ -25,10 +25,14 @@ html {
   background-color: var(--primary-color02);
   color: var(--text-color-light);
   border-radius: 2rem;
-  font-size: 20px;
+  font-size: 19px;
   cursor: pointer;
   border: none;
   outline: none;
+}
+
+img {
+  cursor: pointer;
 }
 
 .overlay {
@@ -138,11 +142,16 @@ html {
   right: 0.4rem;
 }
 
+.span {
+  color: var(--primary-color02);
+}
+
 .header {
   background: url(../Assets/images/Rectangle4.png);
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 110vh;
+  margin-bottom: 10rem;
 }
 
 .header .navbar {
@@ -354,10 +363,6 @@ html {
   width: 75%;
 }
 
-.header .hero .hero-text .span {
-  color: var(--primary-color02);
-}
-
 .header .hero .hero-text .hero-cta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,6 +438,395 @@ html {
   border-radius: 1rem;
 }
 
+.tour-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 10rem;
+}
+
+.tour-section .tour-section-text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+  line-height: 33.2px;
+  color: #2C2D32;
+}
+
+.tour-section .tour-section-text .tour-section-header {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.tour-section .tour-section-text .tour-section-subtitle {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.tour-section .tour-locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  gap: 2.5rem;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tour-section .tour-locations .tour-location-image {
+  width: 30%;
+}
+
+.trip-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10rem;
+  gap: 2.5rem;
+}
+
+.trip-section .trip-section-text {
+  width: 63%;
+  text-align: center;
+  gap: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 33.2px;
+  color: #2C2D32;
+}
+
+.trip-section .trip-section-text .trip-section-header {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.trip-section .trip-section-text .trip-section-subtitle {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.trip-section .trip-selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 65%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3rem;
+}
+
+.trip-section .trip-selection .trip-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  border-radius: 2rem;
+}
+
+.trip-section .trip-selection .domestic {
+  background-image: url(../Assets/images/pngwing2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.trip-section .trip-selection .international {
+  background-image: url(../Assets/images/pngwing1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.trip-section .trip-selection .color {
+  width: 100%;
+  height: 300px;
+  background-color: var(--primary-color02);
+  opacity: .7;
+  position: absolute;
+  border-radius: 1rem;
+}
+
+.trip-section .trip-selection .trip-select-header {
+  z-index: 1;
+  color: var(--text-color-light);
+  margin-bottom: 1rem;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.trip-section .trip-selection .trip-start-btn {
+  background-color: transparent;
+  border: 1px solid var(--text-color-light);
+  z-index: 1;
+  padding: .8rem 2rem;
+}
+
+.latest-tour {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 0 auto 10rem auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.latest-tour .latest-tour-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+  line-height: 33.2px;
+  z-index: 1;
+  color: #2c2d32;
+}
+
+.latest-tour .latest-tour-text .latest-tour-header {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.latest-tour .latest-tour-text .latest-tour-subtitle {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.latest-tour .latest-tour-text .learn-more {
+  color: var(--primary-color02);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.latest-tour .latest-tour-image {
+  position: absolute;
+}
+
+.latest-tour .latest-tour-image .tour-image {
+  width: 100%;
+}
+
+.our-team {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
+.our-team .our-team-top {
+  text-align: center;
+  color: #2c2d32;
+  margin-bottom: 3rem;
+}
+
+.our-team .our-team-top .our-team-top-header {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.our-team .our-team-top .our-team-top-subtitle {
+  font-size: 19px;
+}
+
+.our-team .our-team-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5rem;
+}
+
+.our-team .our-team-bottom .team-image {
+  width: 100%;
+}
+
+.our-team .our-team-bottom .our-team-text {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.our-team .our-team-bottom .our-team-text .team-header {
+  font-size: 26px;
+  color: #2c2d32;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 40px;
+}
+
+.our-team .our-team-bottom .our-team-text .team-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1rem;
+  font-size: 17px;
+  color: #2c2d32;
+  line-height: 28px;
+}
+
+.our-services {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
+.our-services .our-services-text {
+  text-align: center;
+  width: 60%;
+  color: #2c2d32;
+  line-height: 33px;
+  margin: 0 auto 5rem auto;
+}
+
+.our-services .our-services-text .our-services-header {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.our-services .our-services-text .our-services-subtitle {
+  font-size: 19px;
+}
+
+.our-services .service-selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.our-services .service-selection .select-service {
+  width: 40%;
+  height: 300px;
+  background-color: var(--text-color-light);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+          box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+  cursor: pointer;
+}
+
+.our-services .service-selection .select-service .select-service-header {
+  font-size: 22px;
+  color: var(--primary-color02);
+  font-weight: 560;
+}
+
+.our-services .service-selection .select-service .select-service-subtitle {
+  color: #2c2d32;
+  width: 90%;
+}
+
+.our-services .service-selection .select-service .select-service-image {
+  width: 40%;
+  max-width: 400px;
+  margin-top: -4.5rem;
+}
+
+.our-services .service-selection .select-service:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 @media (max-width: 1300px) {
   .header {
     height: 150vh;
@@ -475,6 +869,38 @@ html {
   .navbar .theme {
     display: none !important;
   }
+  .tour-locations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tour-locations .tour-location-image {
+    width: 80% !important;
+    margin: 0 auto;
+  }
+  .trip-selection {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    width: 80% !important;
+    gap: 2rem !important;
+  }
+  .latest-tour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .latest-tour-text {
+    text-align: center;
+    width: 80% !important;
+    margin-bottom: 5rem;
+  }
+  .latest-tour-image {
+    position: relative !important;
+  }
 }
 
 @media (min-width: 887px) {
@@ -483,9 +909,35 @@ html {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .nav-link:last-child {
     display: none;
+  }
+  .our-team-bottom {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .our-team-bottom .our-team-text {
+    width: 100% !important;
+  }
+  .service-selection {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    margin: 0 auto !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .service-selection .select-service {
+    margin-bottom: 3rem;
+    width: 70% !important;
+  }
+  .our-services-text {
+    width: 90% !important;
   }
 }
 
@@ -493,6 +945,23 @@ html {
   .btn {
     font-size: 18px !important;
     padding: 0.8rem 1rem;
+  }
+  .select-service-image {
+    margin: 1rem !important;
+    width: 60% !important;
+  }
+  .select-service {
+    width: 100% !important;
+    height: 400px !important;
+  }
+  .select-service-subtitle {
+    width: 100% !important;
+  }
+  .our-services {
+    width: 100%;
+  }
+  .service-selection {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
