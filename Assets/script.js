@@ -7,6 +7,7 @@ let overlay = document.querySelector(".overlayer");
 for (let i = 0; i < themeToggler.length; i++) {
   themeToggler[i].addEventListener("click", () => {
     togglerCircle.forEach((circle) => circle.classList.toggle("toggler"));
+    document.body.classList.toggle("dark-theme");
   });
 }
 
