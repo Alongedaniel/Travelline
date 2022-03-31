@@ -159,6 +159,7 @@ html {
       flex-direction: row;
       justify-content: space-around;
       position: relative;
+      transition: transform 0.2s ease-in-out;
 
       .circle {
         width: 25px;
@@ -225,14 +226,14 @@ html {
     }
   }
 
-  @keyframes rotate {
-    0% {
-      transform: rotate(180deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+  // @keyframes rotate {
+  //   0% {
+  //     transform: rotate(180deg);
+  //   }
+  //   100% {
+  //     transform: rotate(360deg);
+  //   }
+  // }
 
   //  Navbar End
 

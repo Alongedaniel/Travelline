@@ -1,24 +1,16 @@
-
-
-
-let body = document.querySelector("body");
-
-let themeToggle = function () {
-  let themeToggler = document.querySelector(".theme");
-let togglerCircle = document.querySelector(".circle");
-
-  themeToggler.addEventListener("click", () => {
-    togglerCircle.classList.toggle("toggler");
-  });
-};
-
-let sideBar = function () {
-  let menuIcon = document.querySelector(".menu-icon");
+let themeToggler = document.querySelectorAll(".theme");
+let togglerCircle = document.querySelectorAll(".circle");
+let menuIcon = document.querySelector(".menu-icon");
 let mobileNav = document.querySelector(".mobile-nav");
 let overlay = document.querySelector(".overlayer");
 
+for (let i = 0; i < themeToggler.length; i++) {
+  themeToggler[i].addEventListener("click", () => {
+    togglerCircle.forEach((circle) => circle.classList.toggle("toggler"));
+  });
+}
 
-
+let sideBar = function () {
   menuIcon.addEventListener("click", () => {
     mobileNav.style.transform = "translateY(0)";
     overlay.classList.add("overlay");
