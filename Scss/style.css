@@ -1402,6 +1402,12 @@ body {
   .menu-icon {
     display: none !important;
   }
+  .mobile-nav {
+    display: none !important;
+  }
+  .overlay {
+    display: none !important;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1489,6 +1495,10 @@ body {
   }
   .input {
     width: 200px !important;
+  }
+  .header {
+    border-bottom-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
