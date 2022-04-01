@@ -61,7 +61,7 @@ body {
 
 .mobile-nav {
   width: 100vw;
-  height: 45vh;
+  height: 50vh;
   position: fixed;
   background-color: var(--primary-color02);
   z-index: 1;
@@ -106,6 +106,23 @@ body {
 
 .mobile-nav .mobile-nav-top .mobile-logo-title {
   color: var(--text-color-light);
+}
+
+.mobile-nav .close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: .5rem;
+  font-size: 20px;
+  color: var(--text-color-light);
+  gap: .5rem;
+  cursor: pointer;
 }
 
 .theme {
@@ -326,6 +343,7 @@ body {
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 .header .navbar .menu-icon .bar {
@@ -336,36 +354,36 @@ body {
   background-color: var(--text-color-dark);
 }
 
-.header .navbar .bar:hover {
-  -webkit-animation-name: rotate;
-          animation-name: rotate;
+.header .navbar .menu-icon .bar1 {
+  -webkit-animation-name: slant;
+          animation-name: slant;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }
 
-.header .navbar .bar1 {
+.header .navbar .menu-icon .bar2 {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+  width: 20px;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-.header .navbar .bar2 {
+.header .navbar .menu-icon .bar3 {
+  -webkit-animation-name: slantup;
+          animation-name: slantup;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
-.header .navbar .bar3 {
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }

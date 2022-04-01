@@ -60,7 +60,7 @@ body{
 
 .mobile-nav {
   width: 100vw;
-  height: 45vh;
+  height: 50vh;
   position: fixed;
   background-color: var(--primary-color02);
   z-index: 1;
@@ -95,6 +95,17 @@ body{
       color: var(--text-color-light);
     }
 
+  }
+
+  .close{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: .5rem;
+    font-size: 20px;
+    color: var(--text-color-light);
+    gap: .5rem;
+    cursor: pointer;
   }
 }
 
@@ -261,6 +272,7 @@ body{
       display: flex;
       flex-direction: column;
       transition: transform 0.4s ease-in-out;
+      cursor: pointer;
 
       .bar {
         width: 32px;
@@ -269,36 +281,55 @@ body{
         border-radius: 0.2rem;
         background-color: var(--text-color-dark);
       }
+
+      .bar1 {
+        animation-name: slant;
+        animation-fill-mode: forwards;
+        animation-duration: 0.4s;
+        animation-timing-function: ease-in-out;
+      }
+      .bar2 {
+        animation-name: fadeout;
+        animation-duration: 0.4s;
+        animation-timing-function: ease-in-out;
+        width: 20px;
+        animation-fill-mode: forwards;
+      }
+      .bar3 {
+        animation-name: slantup;
+        animation-fill-mode: forwards;
+        animation-duration: 0.4s;
+        animation-timing-function: ease-in-out;
+      }
     }
 
-    .bar:hover {
-      animation-name: rotate;
-      animation-duration: 0.4s;
-      animation-timing-function: ease-in-out;
-    }
-
-    .bar1 {
-      animation-duration: 0.4s;
-      animation-timing-function: ease-in-out;
-    }
-    .bar2 {
-      animation-duration: 0.4s;
-      animation-delay: 0.4s;
-      animation-timing-function: ease-in-out;
-    }
-    .bar3 {
-      animation-duration: 0.4s;
-      animation-delay: 0.8s;
-      animation-timing-function: ease-in-out;
-    }
+    // .bar:hover {
+    //   animation-name: rotate;
+    //   animation-duration: 0.4s;
+    //   animation-timing-function: ease-in-out;
+    // }
   }
 
-  // @keyframes rotate {
-  //   0% {
-  //     transform: rotate(0deg);
+
+  // @keyframes slantup{
+  //   100%{
+  //     transform: rotate(-45deg);
+  //     margin-top: -.7rem;
   //   }
-  //   100% {
+  // }
+
+
+  // @keyframes slant {
+  //   100%{
   //     transform: rotate(45deg);
+  //     margin-bottom: 0;
+  //   }
+  // }
+
+  // @keyframes fadeout {
+  //   100% {
+  //     transform: translate(-50px);
+  //     opacity: 0;
   //   }
   // }
 
