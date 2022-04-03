@@ -1121,6 +1121,10 @@ body{
     display: none !important;
   }
 
+  .tour-section-text{
+    width: 90% !important;
+  }
+
   .tour-locations {
     flex-direction: column;
 
@@ -1136,18 +1140,48 @@ body{
     gap: 2rem !important;
   }
 
+  .trip-section-text{
+    width: 90% !important;
+  }
+
   .latest-tour {
     flex-direction: column;
   }
 
   .latest-tour-text {
-    text-align: center;
-    width: 80% !important;
+    // text-align: center;
+    width: 90% !important;
     margin-bottom: 5rem;
   }
 
   .latest-tour-image {
     position: relative !important;
+  }
+  
+  .shape1{
+    left: 2rem !important;
+  }
+  
+  .shape2{
+    left: 4rem !important;
+  }
+  
+  .shape3{
+    left: 6rem !important;
+  }
+  
+  .shape4{
+    left: 8rem !important;
+  }
+
+  .logo-title{
+    font-size: 27px !important;
+    left: 2.5rem !important;
+  }
+
+  .shape{
+    width: 50px !important;
+    height: 50px !important;
   }
 }
 

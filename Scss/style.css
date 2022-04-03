@@ -1396,6 +1396,9 @@ body {
   .navbar .theme {
     display: none !important;
   }
+  .tour-section-text {
+    width: 90% !important;
+  }
   .tour-locations {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1414,6 +1417,9 @@ body {
     width: 80% !important;
     gap: 2rem !important;
   }
+  .trip-section-text {
+    width: 90% !important;
+  }
   .latest-tour {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1421,12 +1427,31 @@ body {
             flex-direction: column;
   }
   .latest-tour-text {
-    text-align: center;
-    width: 80% !important;
+    width: 90% !important;
     margin-bottom: 5rem;
   }
   .latest-tour-image {
     position: relative !important;
+  }
+  .shape1 {
+    left: 2rem !important;
+  }
+  .shape2 {
+    left: 4rem !important;
+  }
+  .shape3 {
+    left: 6rem !important;
+  }
+  .shape4 {
+    left: 8rem !important;
+  }
+  .logo-title {
+    font-size: 27px !important;
+    left: 2.5rem !important;
+  }
+  .shape {
+    width: 50px !important;
+    height: 50px !important;
   }
 }
 
