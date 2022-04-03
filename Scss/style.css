@@ -534,7 +534,7 @@ body {
 }
 
 .tour-section .tour-section-text {
-  width: 50%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -754,7 +754,8 @@ body {
 .our-team .our-team-top {
   text-align: center;
   color: var(--text-color-dark);
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem auto;
+  width: 90%;
 }
 
 .our-team .our-team-top .our-team-top-header {
