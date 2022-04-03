@@ -44,6 +44,7 @@ body{
   cursor: pointer;
   border: none;
   outline: none;
+  transition: all .4s ease-in-out;
 }
 .btn:hover{
   opacity: .7;
@@ -60,7 +61,7 @@ body{
 
 .mobile-nav {
   width: 100vw;
-  height: 50vh;
+  height: 43vh;
   position: fixed;
   background-color: var(--primary-color02);
   z-index: 1;
@@ -225,6 +226,12 @@ body{
         color: var(--text-color-dark);
         margin-left: 4rem;
         cursor: pointer;
+        transition: all .4s ease;
+      }
+
+      .nav-link:hover{
+        color: var(--primary-color02);
+        font-weight: 700;
       }
     }
 
@@ -286,13 +293,14 @@ body{
         animation-name: slant;
         animation-fill-mode: forwards;
         animation-duration: 0.4s;
+        width: 20px;
         animation-timing-function: ease-in-out;
       }
       .bar2 {
         animation-name: fadeout;
         animation-duration: 0.4s;
         animation-timing-function: ease-in-out;
-        width: 20px;
+        width: 26px;
         animation-fill-mode: forwards;
       }
       .bar3 {

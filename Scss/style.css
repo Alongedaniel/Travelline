@@ -43,6 +43,8 @@ body {
   cursor: pointer;
   border: none;
   outline: none;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .btn:hover {
@@ -61,7 +63,7 @@ body {
 
 .mobile-nav {
   width: 100vw;
-  height: 50vh;
+  height: 43vh;
   position: fixed;
   background-color: var(--primary-color02);
   z-index: 1;
@@ -273,6 +275,13 @@ body {
   color: var(--text-color-dark);
   margin-left: 4rem;
   cursor: pointer;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.header .navbar .nav-links .nav-link:hover {
+  color: var(--primary-color02);
+  font-weight: 700;
 }
 
 .header .navbar .theme {
@@ -361,6 +370,7 @@ body {
           animation-fill-mode: forwards;
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s;
+  width: 20px;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }
@@ -372,7 +382,7 @@ body {
           animation-duration: 0.4s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  width: 20px;
+  width: 26px;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
