@@ -425,7 +425,7 @@ body {
           flex-direction: column;
   gap: 2rem;
   color: var(--text-color-dark);
-  width: 70%;
+  width: 90%;
 }
 
 .header .hero .hero-text .hero-header {
