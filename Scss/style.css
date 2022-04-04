@@ -74,6 +74,7 @@ body {
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  z-index: 10;
 }
 
 .mobile-nav .mobile-nav-links {
@@ -191,6 +192,7 @@ body {
   margin-bottom: 10rem;
   border-bottom-right-radius: 10rem;
   border-bottom-left-radius: 10rem;
+  position: relative;
 }
 
 .header .navbar {
@@ -208,6 +210,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  background-color: var(--primary-color02);
+  width: 100vw;
+  height: 15vh;
+  z-index: 5;
 }
 
 .header .navbar .shapes {
@@ -227,7 +234,7 @@ body {
 .header .navbar .shapes .shape {
   width: 60px;
   height: 60px;
-  background-color: var(--primary-color02);
+  background-color: var(--primary-color01);
   border-radius: .3rem;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -252,7 +259,7 @@ body {
 
 .header .navbar .shapes .logo-title {
   font-size: 40px;
-  color: var(--text-color-light);
+  color: var(--text-color-dark);
   position: absolute;
   left: 3.4rem;
 }
@@ -272,7 +279,7 @@ body {
 }
 
 .header .navbar .nav-links .nav-link {
-  color: var(--text-color-dark);
+  color: var(--text-color-light);
   margin-left: 4rem;
   cursor: pointer;
   -webkit-transition: all .4s ease;
@@ -280,7 +287,7 @@ body {
 }
 
 .header .navbar .nav-links .nav-link:hover {
-  color: var(--primary-color02);
+  color: var(--primary-color01);
   font-weight: 700;
 }
 
@@ -399,7 +406,7 @@ body {
 }
 
 .header .hero {
-  padding: 2rem 5vw;
+  padding: 10rem 5vw 2rem 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
