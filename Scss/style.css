@@ -43,12 +43,12 @@ body {
   cursor: pointer;
   border: none;
   outline: none;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .btn:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .overlay {
@@ -63,7 +63,7 @@ body {
 
 .mobile-nav {
   width: 100vw;
-  height: 43vh;
+  height: 50vh;
   position: fixed;
   background-color: var(--primary-color02);
   z-index: 1;
@@ -121,10 +121,10 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   font-size: 20px;
   color: var(--text-color-light);
-  gap: .5rem;
+  gap: 0.5rem;
   cursor: pointer;
 }
 
@@ -235,7 +235,7 @@ body {
   width: 60px;
   height: 60px;
   background-color: var(--primary-color01);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
@@ -282,8 +282,8 @@ body {
   color: var(--text-color-light);
   margin-left: 4rem;
   cursor: pointer;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .header .navbar .nav-links .nav-link:hover {
@@ -437,7 +437,7 @@ body {
 
 .header .hero .hero-text .hero-header {
   font-weight: 800;
-  font-size: 44px;
+  font-size: 40px;
   color: var(--text-color-dark);
 }
 
@@ -1000,7 +1000,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 70%;
+  max-width: 60%;
   gap: 1.5rem;
   font-size: 17px;
 }
@@ -1202,7 +1202,7 @@ body {
   width: 60px;
   height: 60px;
   background-color: var(--primary-color01);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
@@ -1564,6 +1564,23 @@ body {
   .header {
     border-bottom-right-radius: 5rem;
     border-bottom-left-radius: 5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer-logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem !important;
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .testimonial-cta {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
