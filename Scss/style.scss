@@ -12,6 +12,7 @@ body {
 
 * {
   margin: 0;
+  border: 1px solid magenta;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -223,17 +224,21 @@ body {
       display: flex;
       flex-direction: row;
       align-items: center;
-
+      transition: all 0.4s linear;
+      
       .nav-link {
         color: var(--text-color-light);
+        padding: 0 1rem;
         margin-left: 4rem;
         cursor: pointer;
         transition: all 0.4s ease;
+
       }
 
       .nav-link:hover {
         color: var(--primary-color01);
-        font-weight: 700;
+        // font-weight: 700;
+        letter-spacing: 1px;
       }
     }
 
